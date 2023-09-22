@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 178, 169, 251, 0.8; 
+  --background-end-rgb: 70, 55, 205, 0.8; 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -22,6 +37,9 @@ body {
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
+
     )
     rgb(var(--background-start-rgb));
+
 }
+

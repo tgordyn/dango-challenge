@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,6 +8,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'xs': '0.75rem',   
+        'sm': '0.875rem',  
+        'base': '1rem',    
+        'lg': '1.125rem',  
+        'xl': '1.25rem',  
+      },
+      fontFamily: {
+        inter: ['Inter'], 
+        poppins: ['Poppins'], 
+        quicksand: ['Quicksand']
+      },
+      colors: {
+        'pink': '#EBDEF0',
+        'red': '#a12847cc',
+        'lightGrey': '#190e1466',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
