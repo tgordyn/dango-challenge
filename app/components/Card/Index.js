@@ -23,7 +23,7 @@ const Card = ({ product }) => {
 
   return (
     <div className="w-full p-4">
-      <div className="bg-white overflow-hidden shadow-md border-2 border-black">
+      <div className="bg-white overflow-hidden shadow-md border-2 border-black" tabIndex="0">
         <div className="relative rounded-lg h-30 p-5 pb-6">
           <Image
             src={product.image}

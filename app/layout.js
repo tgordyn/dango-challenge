@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <Providers>
         <body>
           <Navbar />
-          {children}
+          <main className='h-full '>{children}</main>
         </body>
       </Providers>
     </html>

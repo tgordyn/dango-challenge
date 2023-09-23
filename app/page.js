@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Meta />
-      <main className="flex min-h-screen flex-col items-center justify-between p-8 mt-8 md:p-24">
+      <div className="flex min-h-screen flex-col items-center justify-between p-8 mt-8 md:p-24">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm ">
           <div className="md:flex md:flex-wrap lg:flex lg:flex-wrap -mx-2">
             {products.map((product) => (
@@ -16,7 +16,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 }
