@@ -1,11 +1,15 @@
 import React from "react";
+import Link from "next/link";
 
 function LearnMore() {
   return (
     <p className="text-center ">
-      <a href="/" className="text-black font-semibold font-quicksand underline hover:underline">
+      <Link
+        href={"/learnMore"}
+        className="text-black font-semibold font-quicksand underline hover:underline"
+      >
         Learn more
-      </a>
+      </Link>
     </p>
   );
 }

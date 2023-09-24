@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import Link from "next/link";
 import { emptyCart } from "@/app/store/cartSlice";
 import { setTitle } from "@/app/store/titleSlice";
 import { setEditing } from "@/app/store/editingSlice";
@@ -67,7 +68,9 @@ const Navbar = () => {
           className={`flex items-center lg:block ${editing ? "hidden" : ""}`}
         >
           {/* Logo */}
-          <Image src={dangoLogo} alt="Logo" className="w-full h-auto mr-4" />
+          <Link href={"/"} className="outline-none border-transparent">
+            <Image src={dangoLogo} alt="Logo" className="w-full h-auto mr-4" />
+          </Link>
         </div>
         {editing && (
           <>
